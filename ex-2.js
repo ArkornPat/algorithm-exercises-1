@@ -1,5 +1,14 @@
 function runningSum(arr) {
   //Start coding here
+  let r = []; 
+  let sum = 0; 
+  
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]; 
+    r.push(sum); 
+  }
+  
+  return r;
 }
 
 let result1 = runningSum([1, 2, 3, 4]);

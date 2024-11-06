@@ -1,5 +1,21 @@
 function findOdd(nums) {
   // Start coding here
+  let obj = {}
+  let r 
+  for (let i = 0; i < nums.length; i++) {
+    if (obj[nums[i]]) {
+      obj[nums[i]] += 1;
+    } else {
+      obj[nums[i]] = 1;
+    }
+  }
+
+  for(let key in obj){
+    if(obj[key] % 2 !==0){
+      r = Number(key)
+    }
+  }
+  return r
 }
 
 let result1 = findOdd([0]);
